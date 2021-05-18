@@ -1,10 +1,14 @@
+import Todos from "./components/Todos";
+import TodoProvider from "./context/TodoProvider";
 import "./styles/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Pravin Vargad context api</h1>
-    </div>
+    <TodoProvider>
+      <div className="App">
+        <Todos />
+      </div>
+    </TodoProvider>
   );
 }
 
